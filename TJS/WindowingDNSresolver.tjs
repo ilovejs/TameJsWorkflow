@@ -1,0 +1,27 @@
+/**
+ * We've shown parallel and serial work flows, what about something in between?
+ * For instance, we might want to make progress in parallel on our DNS lookups, but not smash the server all at once.
+ * A compromise is windowing, which can be achieved in tamejs conveniently in a number of different ways
+ */
+
+function do_all (lst, windowsz) {
+    var rv = new tame.Rendezvous ();
+    var nsent = 0;
+    var nrecv = 0;
+
+    while (nrecv < lst.length) {
+        if (nsent - nrecv < windowsz && nsent < n) {
+
+            do_one(rv.id(nsent).defer(), lst[nsent]);
+            nsent++;
+        } else {
+            var evid;
+            await {
+                rv.wait(defer(evid));
+            }
+            console.log("got back lookup nsent=" + evid);
+            nrecv++;
+        }
+    }
+}
+

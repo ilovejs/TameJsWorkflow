@@ -1,0 +1,35 @@
+///tamejs -o <outfile> <infile>
+//node <outfile> # or whatever you want
+
+require('tamejs').register();  //register .tjs suffix
+//require("mylib.tjs");
+
+//await {
+//    dns.resolve("okcupid.com", defer(var err, ip));
+//}
+//
+////generix LHS assignment
+//var d = {};
+//var err = [];
+//await {
+//    dns.resolve("okupid.com", defer(err[0], d.ip));
+//}
+
+//example 1:
+//for (var i = 0; i < 10; i++) {
+//    await { setTimeout (defer (), 100); }
+//    console.log ("hello");
+//}
+
+//example 2 - parallel
+//for (var i = 0; i < 10; i++) {
+//    await {
+//        setTimeout (defer (), 100);
+//        setTimeout (defer (), 10);
+//    }
+//    console.log ("hello");
+//}
+
+
+
+

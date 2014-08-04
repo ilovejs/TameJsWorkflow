@@ -1,0 +1,28 @@
+function rand_wait(cb) {
+    var time = Math.floor (Math.random()*5);
+    if (time == 0) {
+        //TODO: signiture !!
+        cb(0); return;
+    }
+    await setTimeout (defer (), time);
+    //pass on time variable
+    cb(time);
+}
+
+function rand_wait_autocb(autocb) {
+    var time = Math.floor (Math.random()*5);
+    if (time == 0) {
+        return 0;
+    }
+    await setTimeout (defer (), time);
+    return time;
+}
+
+
+
+
+for(var i = 0; i < 8; i++) {
+    rand_wait(function (time) {
+        console.log(time);
+    });
+}

@@ -1,0 +1,31 @@
+var dns = require("dns");
+
+/**
+ * Usage node parallelDNSresolver.js yahoo.com nytimes.com google.com okcupid.com
+ * @param cb
+ * @param host
+ */
+function do_one (cb, host) {
+    var err, ip;
+    await {
+        dns.resolve(host, "A", defer(err, ip));
+    }
+    if(err) { console.log ("ERROR! " + err); }
+    else { console.log (host + " -> " + ip); }
+    //callback
+    cb();
+}
+
+function do_all(lst){
+    //await block hold multiple task, which mean parallelism
+    await {
+        for (var i = 0; i < lst.length; i++){
+            //function call
+            do_one(defer(), lst[i]);
+        }
+    }
+}
+
+console.log(process.argv);
+//skip node FILENAME, then split into array
+do_all(process.argv.slice(2)); //offset 2

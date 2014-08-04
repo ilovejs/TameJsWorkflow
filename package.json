@@ -1,0 +1,20 @@
+{
+  "name": "Tamejs_Example",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mz",
+  "license": "ISC",
+  "devDependencies": {
+    "async": "^0.9.0",
+    "mine": "^0.1.0",
+    "q": "^1.0.1",
+    "rest": "^1.1.1",
+    "step": "0.0.5",
+    "tamejs": "^0.4.14",
+    "when": "^3.4.2"
+  }
+}

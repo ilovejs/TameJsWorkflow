@@ -1,0 +1,64 @@
+{
+    "customer": {
+        "id": "20",
+        "createdDateTime": "2014-08-03T11:40:29-13:00",
+        "account": 126,
+        "name": "Raza Haider",
+        "address": "123 Test Street",
+        "city": "Sialkot",
+        "state": "SKT",
+        "postCode": "2547",
+        "country": "Pakistan",
+        "phone": "042010538",
+        "email": "rhaider@fbshipping.ae"
+    },
+    "Payments": [
+        {
+            "Amount": "25000",
+            "MeansOfPayment": "CASH",
+            "name": "Mr Raza Haider",
+            "expiry": "0517",
+            "cvcNumber": "123",
+            "installments": 0,
+            "comment": "",
+            "phone": "92098120",
+            "postCode": "1234"
+        }
+    ]
+}
+
+
+
+////generate basket
+curl -X POST -H 'Content-Type: application/json'
+-H 'Authorization: Bearer bf13f5262f69456ba6c1e2d1c2b25056'
+-d '{
+"Channel": "W",
+"Seller": "AINFO1",
+"Perfcode": "ETES3IS",
+"Area": "@1",
+"Demands": [
+{
+"PriceTypeCode": "A",
+"Quantity": 1,
+"Admits": 1,
+"offerCode": "",
+"qualifierCode": "",
+"entitlement": "",
+"Customer": {
+"id": "20",
+"Afile": "tel",
+"Account": "126",
+"OrgCustomerId": 1266
+}
+}
+],
+"Fees": [
+{
+"Type": "5",
+"Code": "W"
+}
+]
+}
+' -v https://api.etixdubai.com/baskets
+

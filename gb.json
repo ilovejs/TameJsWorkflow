@@ -1,0 +1,28 @@
+{
+    "Channel": "W",
+    "Seller": "AINFO1",
+    "Perfcode": "ETES3IS",
+    "Area": "@1",
+    "Demands": [
+        {
+            "PriceTypeCode": "A",
+            "Quantity": 1,
+            "Admits": 1,
+            "offerCode": "",
+            "qualifierCode": "",
+            "entitlement": "",
+            "Customer": {
+                "id": "20",
+                "Afile": "tel",
+                "Account": "126",
+                "OrgCustomerId": 1266
+            }
+        }
+    ],
+    "Fees": [
+        {
+            "Type": "5",
+            "Code": "W"
+        }
+    ]
+}

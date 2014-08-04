@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/out/ES6/fatArrow.js" />
+        <item url="file://$PROJECT_DIR$/out/ES6/paste.js" />
+        <item url="file://$PROJECT_DIR$/out/ES6/ES6-2.js" />
+        <item url="file://$PROJECT_DIR$/out/ES6/ES6-1.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/out/ES6/fatArrow.js" />
+      <root url="file://$PROJECT_DIR$/out/ES6/paste.js" />
+      <root url="file://$PROJECT_DIR$/out/ES6/ES6-2.js" />
+      <root url="file://$PROJECT_DIR$/out/ES6/ES6-1.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
